@@ -1,0 +1,34 @@
+09/01/2026
+
+## react intro
+
+    What is React?
+
+    1) React is a JavaScript library (not a framework) developed by Facebook (Meta) for building user interfaces (UIs), especially Single Page Applications (SPAs).
+
+    2) It helps developers build reusable UI components that update efficiently when data changes.
+
+    Instead of reloading a whole webpage when something changes, React updates only the parts of the UI that need to change.
+
+    -------
+    Why do we need React?
+
+	It makes UI development faster, cleaner, and more efficient.
+
+	Provides a better user experience with smooth updates without page reloads.
+ 
+13/01/2026
+
+## Prop
+
+    Props, is nothing but drilling data from praent component to child component.
+    
+        props decleration
+        destructering of props
+
+## Conditional rendering
+
+    Conditional rendering means showing  or hiding parts on UI basde on some condition .
+
+        Ternary operator     [condition?true:false ]
+        Logical operator    &&  ||  !
