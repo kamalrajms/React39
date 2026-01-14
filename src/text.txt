@@ -16,7 +16,21 @@
 	It makes UI development faster, cleaner, and more efficient.
 
 	Provides a better user experience with smooth updates without page reloads.
+
+
+    ## must need to install node.js
  
+## procedure to initiate project
+
+    step 1 : npm create vite@latest [project_name]
+    step 2 : select react
+    step 3 : select javascript+swc
+    step 4 : npm install                // install node module packages
+    step 5 : npm run dev
+
+    if you want to re-run your project mean 
+        npm run dev
+
 13/01/2026
 
 ## Prop
@@ -32,3 +46,22 @@
 
         Ternary operator     [condition?true:false ]
         Logical operator    &&  ||  !
+
+14/01/2026
+
+## list rendering
+
+    Rendering multiple item dynamically using .map()
+
+##  useState()
+
+    Data that changes over time (e.g : uer input ,API Responses)
+    Managed with the useState hook.
+
+    syntex: const[state,setState]=useState(initiateValue)
+
+        const[count,setCount]=useState(5)
+
+    state--- the current value of the state variable
+    setState-- a function that updat the state
+    initiateValue--- the starting value of the state
