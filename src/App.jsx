@@ -3,6 +3,9 @@ import Greeting from "./Greeting";
 import ConditionalRendering from "./Component/ConditionalRendering";
 import ListRendering from "./Component/ListRendering";
 import UsestateCount from "./Component/UsestateCount";
+import Dark from "./Component/Dark";
+import FieldUseState from "./Component/FieldUseState";
+import RegisterForm from "./Component/RegisterForm";
 
 export default function App() {
   const name = "Naveen kumar";
@@ -12,6 +15,9 @@ export default function App() {
 
   return (
     <div>
+      <RegisterForm/>
+      <FieldUseState />
+      <Dark />
       <UsestateCount />
       <h2>List rendering</h2>
       <ListRendering />
