@@ -7,12 +7,21 @@ export default function RegisterForm() {
     age: "",
   });
 
-  const handleInput =(e)=>{
+  const handleInput = (e) => {
+    const {name,value}=e.target
     setFormData({
-        ...formData,
-        [e.target.name]:e.target.value
-    })
-  }
+      ...formData,
+      [name]:value,
+    });
+  };
+
+  // const handleInput = (e) => {
+  //   
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]:e.target.value,
+  //   });
+  // };
   return (
     <div>
       <h2>Multi input Example</h2>
@@ -22,7 +31,7 @@ export default function RegisterForm() {
         value={formData.name}
         placeholder="Enter name"
         onChange={handleInput}
-      />
+      /> 
       <input
         name="email"
         type="email"

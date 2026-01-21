@@ -67,3 +67,35 @@
     state--- the current value of the state variable
     setState-- a function that updat the state
     initiateValue--- the starting value of the state
+
+21/01/2026
+
+types of  domain
+
+    .com--- commercial
+    .org--- orrganization
+    .net--- Network
+    .edu--- Education
+    .gov-- government
+    .mil--- Military
+    .co--- Company
+    .info--- Information
+    .biz---Business
+    .in---india
+
+## useEffect()
+
+    In react,useEffect is a hook that lets you perform side effect in functional component
+
+    Side effect are task that happends  outside the narmal react rendering process  ..like:
+
+            Fetching data from API 
+            Updating the browser DOM manually
+            Starting/stoping Timers
+
+    
+    syntex:
+
+        useEffect(()=>{
+            // code Logic....
+        },[dependency 1,dependency 2....])

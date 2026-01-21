@@ -6,6 +6,7 @@ import UsestateCount from "./Component/UsestateCount";
 import Dark from "./Component/Dark";
 import FieldUseState from "./Component/FieldUseState";
 import RegisterForm from "./Component/RegisterForm";
+import DataForm from "./Component/DataForm";
 
 export default function App() {
   const name = "Naveen kumar";
@@ -15,7 +16,8 @@ export default function App() {
 
   return (
     <div>
-      <RegisterForm/>
+      <DataForm />
+      <RegisterForm />
       <FieldUseState />
       <Dark />
       <UsestateCount />
