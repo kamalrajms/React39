@@ -4,10 +4,10 @@ export default function UsestateCount() {
   const [count, setCount] = useState(0);
 
   const [user, setUser] = useState(true);
-console.log(user);
+  console.log(user);
 
   return (
-    <div>
+    <div className="count">
       {user ? (
         <p>Welcome back after long dayss...</p>
       ) : (

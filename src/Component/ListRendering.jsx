@@ -10,9 +10,14 @@ export default function ListRendering() {
     // { id: 3, name: "kumar" },
   ];
   //   console.log(users.length);
+  const theme = {
+    backgroundColor: "yellow",
+    color: "red",
+    padding: "50px",
+  };
 
   return (
-    <div>
+    <div style={theme}>
       <h3>fruits data</h3>
       <ul>
         {/* <li>apple</li>

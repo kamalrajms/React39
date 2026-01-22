@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Dark.css"
 
 export default function Dark() {
   const [darkMode, setDarkMode] = useState(false);
@@ -10,10 +11,11 @@ export default function Dark() {
         padding: "30px",
       }}
     >
-      <button onClick={() => setDarkMode(!darkMode)}>
+      <button className="darkButtom" onClick={() => setDarkMode(!darkMode)}>
         Switch TO {darkMode ? "Light" : "Dark"} mode
       </button>
       <p>You are in {darkMode ? "Dark" : "Light"} mode</p>
+      <div className="darkbox"></div>
     </div>
   );
 }

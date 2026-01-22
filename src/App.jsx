@@ -7,6 +7,9 @@ import Dark from "./Component/Dark";
 import FieldUseState from "./Component/FieldUseState";
 import RegisterForm from "./Component/RegisterForm";
 import DataForm from "./Component/DataForm";
+import UseEffectHook from "./Component/UseEffectHook";
+import UseEffectTimer from "./Component/UseEffectTimer";
+import TimerWatch from "./Component/TimerWatch";
 
 export default function App() {
   const name = "Naveen kumar";
@@ -16,6 +19,9 @@ export default function App() {
 
   return (
     <div>
+      <TimerWatch />
+      <UseEffectTimer />
+      <UseEffectHook />
       <DataForm />
       <RegisterForm />
       <FieldUseState />

@@ -23,7 +23,7 @@ export default function RegisterForm() {
   //   });
   // };
   return (
-    <div>
+    <div className="regiter">
       <h2>Multi input Example</h2>
       <input
         name="name"

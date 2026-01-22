@@ -83,6 +83,17 @@ types of  domain
     .biz---Business
     .in---india
 
+22/01/2026
+
+## style in react 
+
+    Global way styleing  --- app.css,index.css
+    External way styleing--- External css file
+    inline styleing---- style={{property:value}}
+    Module way styleing--- must need to name the file name as [fileName.module.css]
+    Object Way styleing--- declearing a style in object
+
+
 ## useEffect()
 
     In react,useEffect is a hook that lets you perform side effect in functional component
@@ -99,3 +110,9 @@ types of  domain
         useEffect(()=>{
             // code Logic....
         },[dependency 1,dependency 2....])
+
+        if we oesn't mension any declearing mean it will only once.
+
+        when ever the declearing gets an update ,that useEffect Logic is execute.
+
+

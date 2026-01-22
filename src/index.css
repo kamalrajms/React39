@@ -1,0 +1,16 @@
+.count {
+  background-color: aqua;
+  padding: 20px;
+}
+.regiter {
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+}
+.darkbox{
+    background-color: blue;
+}
+.fielduseState{
+    margin: 500px;
+    padding: 100px;
+}

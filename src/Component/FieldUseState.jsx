@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import kamal from "./FieldUseState.module.css"
 
 export default function FieldUseState() {
   const [name, setName] = useState("react");
@@ -7,7 +8,7 @@ export default function FieldUseState() {
   const [isChecked, setIsChecked] = useState(true);
   console.log(isChecked);
   return (
-    <div>
+    <div className={kamal.fielduseState}>
       <label htmlFor="">Name</label>
       <input
         type="text"
