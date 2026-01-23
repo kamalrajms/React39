@@ -10,6 +10,8 @@ import DataForm from "./Component/DataForm";
 import UseEffectHook from "./Component/UseEffectHook";
 import UseEffectTimer from "./Component/UseEffectTimer";
 import TimerWatch from "./Component/TimerWatch";
+import UseEffectAIP from "./Component/UseEffectAIP";
+import UseRefHook from "./Component/UseRefHook";
 
 export default function App() {
   const name = "Naveen kumar";
@@ -19,6 +21,8 @@ export default function App() {
 
   return (
     <div>
+      <UseRefHook/>
+      <UseEffectAIP />
       <TimerWatch />
       <UseEffectTimer />
       <UseEffectHook />

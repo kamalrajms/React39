@@ -7,10 +7,26 @@
   color: white;
   padding: 20px;
 }
-.darkbox{
-    background-color: blue;
+.darkbox {
+  background-color: blue;
 }
-.fielduseState{
-    margin: 500px;
-    padding: 100px;
+.fielduseState {
+  margin: 500px;
+  padding: 100px;
+}
+
+/* uesref */
+.image-box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  background-color: aqua;
+  cursor: pointer;
+}
+.image-img{
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  /* background-color: aqua; */
+  cursor: pointer;
 }

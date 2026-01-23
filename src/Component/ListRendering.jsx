@@ -5,9 +5,9 @@ export default function ListRendering() {
   console.log(fruits.length);
 
   const users = [
-    // { id: 1, name: "hari" },
-    // { id: 2, name: "raj" },
-    // { id: 3, name: "kumar" },
+    { id: 1, name: "hari" },
+    { id: 2, name: "raj" },
+    { id: 3, name: "kumar" },
   ];
   //   console.log(users.length);
   const theme = {

@@ -90,7 +90,7 @@ types of  domain
     Global way styleing  --- app.css,index.css
     External way styleing--- External css file
     inline styleing---- style={{property:value}}
-    Module way styleing--- must need to name the file name as [fileName.module.css]
+    Module way styleing--- must need to name  the file name as [fileName.module.css]
     Object Way styleing--- declearing a style in object
 
 
@@ -115,4 +115,17 @@ types of  domain
 
         when ever the declearing gets an update ,that useEffect Logic is execute.
 
+23/01/2026
 
+## Useref()
+
+    Useref is a react hook that gives you a box (.current) you can store anything in
+    like num,str,obj,function,.even DOM elements.
+
+    That value persists between renders.
+
+    Updating it does not cause your component to re-render.
+
+    {current:value}
+
+    
