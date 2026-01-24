@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext, createContext } from "react";
 import Greeting from "./Greeting";
 import ConditionalRendering from "./Component/ConditionalRendering";
 import ListRendering from "./Component/ListRendering";
@@ -12,6 +12,10 @@ import UseEffectTimer from "./Component/UseEffectTimer";
 import TimerWatch from "./Component/TimerWatch";
 import UseEffectAIP from "./Component/UseEffectAIP";
 import UseRefHook from "./Component/UseRefHook";
+import First from "./Context/First";
+import ContextHook from "./ContextTheme/ContextHook";
+
+export const Pass = createContext();
 
 export default function App() {
   const name = "Naveen kumar";
@@ -19,9 +23,22 @@ export default function App() {
   const address = "abc street , xyz colony";
   const dispaly = false;
 
+  const [mode, setMode] = useState("light");
+  const data = { name: "vamsi" };
   return (
     <div>
-      <UseRefHook/>
+      <div style={{ border: "2px solid black", padding: "20px" }}>
+        <Pass.Provider value={{ mode, setMode, data }}>
+          <ContextHook />
+        </Pass.Provider>
+      </div>
+      <nav style={{ border: "2px solid black", padding: "20px" }}>
+        <h2>App commponent</h2>
+        <Pass.Provider value={name}>
+          <First />
+        </Pass.Provider>
+      </nav>
+      <UseRefHook />
       <UseEffectAIP />
       <TimerWatch />
       <UseEffectTimer />

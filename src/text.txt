@@ -129,3 +129,16 @@ types of  domain
     {current:value}
 
     
+24/01/2026
+
+## useContext()
+
+    Passing data from a parent component down to deeply nested child component is annoying.
+    Normally,you'd have to pass props manually through eacch level(called Props drilling).
+    useContext lets you to skip all the middle components and share data directly.
+
+            Create a context
+            Provide a value
+            Consume the value
+
+    we can able to use only one usecontext in a component...
