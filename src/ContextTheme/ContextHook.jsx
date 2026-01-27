@@ -7,7 +7,7 @@ export default function ContextHook() {
   return (
     <div className={mode}>
       <ContextForm />
-      <input type="text" value={data.name} />
+      <input type="text"  />
     </div>
   );
 }

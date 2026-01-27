@@ -142,3 +142,16 @@ types of  domain
             Consume the value
 
     we can able to use only one usecontext in a component...
+
+27/01/2026
+
+## useReducer()
+
+    syntex:
+        const[state,dispatch]=useReducer(ReducerFunction,initialState)
+
+    state--- current state (Like useState...)
+    dispatch(action)---a function to tell reducer what to do.
+    ReducerFunction(state,action)--- tha logic that return a new state
+    initialState--- starting values.
+

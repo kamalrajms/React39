@@ -14,6 +14,8 @@ import UseEffectAIP from "./Component/UseEffectAIP";
 import UseRefHook from "./Component/UseRefHook";
 import First from "./Context/First";
 import ContextHook from "./ContextTheme/ContextHook";
+import UseReducerHook from "./Component/UseReducerHook";
+import UseReducerForm from "./Component/UseReducerForm";
 
 export const Pass = createContext();
 
@@ -27,6 +29,8 @@ export default function App() {
   const data = { name: "vamsi" };
   return (
     <div>
+      <UseReducerForm />
+      <UseReducerHook />
       <div style={{ border: "2px solid black", padding: "20px" }}>
         <Pass.Provider value={{ mode, setMode, data }}>
           <ContextHook />
