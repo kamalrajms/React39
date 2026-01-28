@@ -155,3 +155,47 @@ types of  domain
     ReducerFunction(state,action)--- tha logic that return a new state
     initialState--- starting values.
 
+28/01/2026
+
+## useId()
+
+    useId() is a react Hook that creates a unique and stable ID for each component instance.
+
+
+## Routing concept in react
+
+    routing means navigation between pages in a web app without  refreshing the browser.
+    In traditional website ,clicking a link reloads the whole page.
+    In react (Single page Applications) , routing lets us changes the view without reloading.
+
+        Better performance 
+        Smooth user experiance
+        Control over navigation without server request
+
+    Commed: npm install react-router-dom
+
+    structure:
+
+        <BrowserRouter> 
+        <Routes>
+        <Route path="we need to add address apth for a component" element={<Home/>}/>
+        <Route path="we need to add address apth for a component" element={<About/>}/>
+        <Route path="we need to add address apth for a component" element={<contact/>}/>
+        </Routes>
+        </BrowserRouter>
+
+        #  <BrowserRouter> 
+
+            It is the main wrapper compponent for routing in react App.
+            In enables navigation using the brouser URl in react app (history url)
+            Without  , routing will not work.
+
+        #  <Routes>
+
+            It contains all the  <Route/> component.
+            It tells react Router to which component to show at that time for which path.
+            Only one route will match and Render at atime.
+        
+        # <Route/>
+
+            Defines a specific UrL path and which component should load for that path.
