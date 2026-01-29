@@ -12,8 +12,6 @@ import UseEffectTimer from "./Component/UseEffectTimer";
 import TimerWatch from "./Component/TimerWatch";
 import UseEffectAIP from "./Component/UseEffectAIP";
 import UseRefHook from "./Component/UseRefHook";
-import First from "./Context/First";
-import ContextHook from "./ContextTheme/ContextHook";
 import UseReducerHook from "./Component/UseReducerHook";
 import UseReducerForm from "./Component/UseReducerForm";
 import UseIdHook from "./Component/UseIdHook";
@@ -22,6 +20,8 @@ import Home from "./Router/Home";
 import About from "./Router/About";
 import Service from "./Router/Service";
 import Contact from "./Router/Contact";
+import WebDevelopment from "./Router/WebDevelopment";
+import AppDevelopment from "./Router/AppDevelopment";
 
 // export const Pass = createContext();
 
@@ -45,17 +45,7 @@ export default function App() {
           </div>
           <UseReducerForm />
           <UseReducerHook />
-          <div style={{ border: "2px solid black", padding: "20px" }}>
-            <Pass.Provider value={{ mode, setMode, data }}>
-              <ContextHook />
-            </Pass.Provider>
-          </div>
-          <nav style={{ border: "2px solid black", padding: "20px" }}>
-            <h2>App commponent</h2>
-            <Pass.Provider value={name}>
-              <First />
-            </Pass.Provider>
-          </nav>
+
           <UseRefHook />
           <UseEffectAIP />
           <TimerWatch />
@@ -82,16 +72,19 @@ export default function App() {
 
       <BrowserRouter>
         <div className="header">
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/About">About</Link>
           <Link to="/Service">Service</Link>
           <Link to="/Contact">Contact</Link>
         </div>
         <Routes>
           {/* don't creat any devisions in this Routes  */}
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Service" element={<Service />} />
+          <Route path="/Service" element={<Service />}>
+            <Route path="WebDevelopmemt" element={<WebDevelopment />} />
+            <Route path="AppDevelopment" element={<AppDevelopment />} />
+          </Route>
           <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

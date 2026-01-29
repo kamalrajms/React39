@@ -162,7 +162,7 @@ types of  domain
     useId() is a react Hook that creates a unique and stable ID for each component instance.
 
 
-## Routing concept in react
+## Routing concept in react & Nested Ruting
 
     routing means navigation between pages in a web app without  refreshing the browser.
     In traditional website ,clicking a link reloads the whole page.
@@ -199,3 +199,20 @@ types of  domain
         # <Route/>
 
             Defines a specific UrL path and which component should load for that path.
+    
+
+29/01/2026
+
+## UseCallBack()
+
+    Every time a component  re-Renders,
+    It creates a brand-new copy of every function inside it.
+
+    Even if the function's code looks exctaly the same,
+    React sees it as  different it's a new Object in memory.
+
+    Syntex:
+
+        const name=UseCallBack(()=>{
+            //code here
+        },[dependency 1,dependency 2....])
