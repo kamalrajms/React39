@@ -230,3 +230,64 @@ types of  domain
         useParams() is a React Router hook that lets you read dynamic values from the URL path (not from the query string).
 
 		It’s commonly used when you have routes with dynamic segments like /users/:id or /products/:productId.
+
+04/02/2026
+
+## Proper API integration
+
+    Fetch,Axios
+
+    commend:npm i axios
+
+    structure of Fetch:
+
+            response=[
+                {
+                "name":"bfuwief",
+                "name":"bfuwief",
+                },
+                {
+                "name":"bfuwief",
+                "name":"bfuwief",
+                },
+                {
+                "name":"bfuwief",
+                "name":"bfuwief",
+                },
+            ]
+
+    structure of axios:
+
+        response={
+            data:[{name:"srvv",age:55},{name:"srvv",age:55},]
+            status:"ok",
+            header:{},
+            config:{}
+        }
+
+## Custom hook
+
+        A Custom hook is a reusable functional in react that contains logic hooks (like useState,useEffect..)
+
+        it allows you to share and reuse stateful logic between multiple component without repateing code.
+
+        the name of a hook must start with  use ,such as usefetch or useLocator.
+
+        use js file not jsx
+
+## CRED Operation
+
+    create data----Post Method
+    Read data---Get Method
+    Update data--- Put Method
+    Delete data--- Delete Method
+
+
+
+        ReactAPP                              server
+
+        list    ------------>https request------{   }
+        1
+        2       ------<Https Responses {json}----{   }                      
+        3
+

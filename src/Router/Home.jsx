@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UseCallBack from "../Component/UseCallBack";
 import { useNavigate } from "react-router-dom";
+import AIPinteragation from "../Component/AIPinteragation";
 
 export default function Home() {
   const page = useNavigate();
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <div>
+      <AIPinteragation />
       <h2>Home component hello</h2>
       <UseCallBack />
       <button onClick={() => page("/Service")}>Move to service Page </button>
